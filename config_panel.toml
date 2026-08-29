@@ -80,17 +80,6 @@ help.de = "Hier kannst du einige grundlegende Einstellungen für deine Forgejo-I
         type = "number"
         min = -1
 
-        [main.repository.allow_fork_without_maximum_limit]
-        ask.en = "Allow forks beyond the repository limit?"
-        ask.fr = "Autoriser les forks au-delà de la limite de dépôts ?"
-        ask.de = "Forks über das Repository-Limit hinaus erlauben?"
-        help.en = "Allow users to fork repositories even when their maximum repository limit is reached."
-        help.fr = "Permettre aux utilisateurs de forker des dépôts même lorsque leur limite maximale de dépôts est atteinte."
-        help.de = "Nutzern erlauben, Repositories zu forken, auch wenn ihr Repository-Limit erreicht ist."
-        type = "boolean"
-        yes = "true"
-        no = "false"
-
         [main.repository.disable_regular_org_creation]
         ask.en = "Disable organization creation by users?"
         ask.fr = "Désactiver la création d'organisations par les utilisateurs ?"

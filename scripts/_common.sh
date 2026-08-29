@@ -124,7 +124,6 @@ ensure_vars_set() {
     ynh_app_setting_set_default --key=default_keep_email_private --value=false
 
     ynh_app_setting_set_default --key=max_creation_limit --value=-1
-    ynh_app_setting_set_default --key=allow_fork_without_maximum_limit --value=true
     ynh_app_setting_set_default --key=disable_regular_org_creation --value=false
 
     ynh_app_setting_set_default --key=repos_indexer_enabled --value=false
