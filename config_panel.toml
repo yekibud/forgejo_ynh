@@ -77,8 +77,10 @@ help.de = "Hier kannst du einige grundlegende Einstellungen für deine Forgejo-I
         help.en = "Set to 0 to disable repository creation by users (admins can still create repositories), or -1 for no limit."
         help.fr = "Mettre à 0 pour empêcher les utilisateurs de créer des dépôts (les administrateurs le peuvent toujours), ou -1 pour aucune limite."
         help.de = "0 verhindert, dass Nutzer Repositories erstellen (Administratoren können dies weiterhin), -1 bedeutet keine Begrenzung."
-        type = "number"
-        min = -1
+        # type = "number" doesn't support negative values (YunoHost normalize uses isdigit())
+        type = "string"
+        pattern.regexp = '^(-1|[0-9]+)$'
+        pattern.error = "Must be -1 (no limit), 0 (disable creation) or a positive number."
 
         [main.repository.disable_regular_org_creation]
         ask.en = "Disable organization creation by users?"
